@@ -45,7 +45,7 @@ if entered_pin == pin:
                     print(f"Withdrawl limit exceeded! (Max {withdrawal_limit} Rs per day)\n)")
                 else:
                     balance -= amount
-                    transaction.append(f"withdrew: {amount} Rs")
+                    transactions.append(f"withdrew: {amount} Rs")
                     print(f"{amount} Rs Withdrawn Successfully\n")
             except ValueError:
                 print("Invalid input.\n")
